@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding/border is included in element's total width/height */
+}
+
+header {
+    background-color: #f1f1f1; /* Light gray background for header */
+    padding: 20px;
+    margin-bottom: 20px; /* Space below the header */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 10px; /* Adds space below headings */
+}
+
+.iframe-container {
+    display: flex; /* Makes the child elements align side by side */
+    justify-content: space-around; /* Distributes space around the iframes */
+    /* Add a gap between iframes */
+    gap: 20px; 
+}
+
+.iframe-container iframe {
+    /* Each iframe takes up equal space */
+    flex: 1; 
+    /* Set a height; width will be handled by flex: 1 */
+    height: 400px; 
+    /* Optional: Ensure iframes fit within container */
+    max-width: 100%; 
+}
+
+/* Optional: Make them stack vertically on screens smaller than 600px */
+@media (max-width: 600px) {
+    .iframe-container {
+        flex-direction: column;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1; /* Light gray background for footer */
+    margin-top: 20px; /* Space above the footer */
+}
