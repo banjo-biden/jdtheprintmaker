@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding/border is included in element's total width/height */
+}
+
+header {
+    display: flex;
+    background-color: #522b5d; /* Light gray background for header */
+    padding: 10px;
+    margin-bottom: 1px; /* Space below the header */
+    justify-content: center;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 15px;
+    border-color: #3b002b;
+    
+.transparent-container {
+  background-image: url('/assets/images/four_horse_print.png');
+    background-size: cover; /* Ensures the image covers the entire container */
+opacity: 0.5; /* Makes the container AND its content 50% transparent */
+}
+    
+}
+
+.transbox {
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  margin: 10px;
+  border: 1px outset #efc9ff;
+    border-radius: 15px;
+
+}
+
+.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.site-header {
+  padding: 20px 0; // Vertical padding
+  width: 100%;
+
+  .header-container {
+    display: flex;
+    align-items: center;          // Vertically centers images and text
+    justify-content: space-between; // Pushes items to the far left, center, and far right
+    padding: 0 5%;                // Your horizontal "affixed" padding
+
+    img {
+      max-height: 175px;           // Ensures images don't blow up in size
+      width: auto;
+      border-style: outset;
+      border-width: 3px;
+      border-radius: 25px;
+      border-color: #8c0067;
+    }
+
+    .header-title {
+      flex-grow: 1;               // Allows the title to take up available space
+      text-align: center;         // Ensures the text stays centered in that space
+      margin: 0 20px;
+      padding-left: auto;
+      padding-right: auto;
+      // This creates your "margins" between images and text
+    }
+  }
+}
+
+
+nav {
+    font-size: 20px;
+    display: flex; /* Makes the child elements align side by side */
+    justify-content: center; /* Centers the navigation links */
+    gap: 20px; /* Adds space between navigation links */
+    background-color: #e79eff; /* Light purple background for nav */
+    a:hover {
+        color: #8c0067
+    }
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 7px;
+    border-color: #8c0067;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+    display: inline-block; /* Makes the title take up only as much width as it needs */
+    width: auto; /* Allows the title to adjust its width based on content */
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 15px;
+    border-color: #4f073c;
+    background-color: #efc9ff;
+    padding: 10px; /* Adds space inside the page title */   
+    margin-top: 10px; /* Adds space above the page title */
+    margin-bottom: 10px; /* Adds space below the page title */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 10px; /* Adds space below headings */
+}
+
+.iframe-container {
+    display: flex; /* Makes the child elements align side by side */
+    justify-content: space-around; /* Distributes space around the iframes */
+    /* Add a gap between iframes */
+    gap: 20px; 
+}
+
+.iframe-container iframe {
+    /* Each iframe takes up equal space */
+    flex: 1; 
+    /* Set a height; width will be handled by flex: 1 */
+    height: 400px; 
+    /* Optional: Ensure iframes fit within container */
+    max-width: 100%; 
+}
+
+/* Optional: Make them stack vertically on screens smaller than 600px */
+@media (max-width: 600px) {
+    .iframe-container {
+        flex-direction: column;
+    }
+}
+
+footer {
+     display: flex;
+     justify-content: center;
+    padding: 10px;
+    background-color: #f1f1f1; /* Light gray background for footer */
+    margin-top: 15px; /* Space above the footer */
+}
+
+.site-footer {
+  padding: 20px 0; // Vertical padding
+  width: 100%;
+
+  .footer-container {
+    display: flex;
+    align-items: center;          // Vertically centers images and text
+    justify-content: space-between; // Pushes items to the far left, center, and far right
+    padding: 0 5%;                // Your horizontal "affixed" padding
+
+    img {
+      max-height: 75px;           // Ensures images don't blow up in size
+      width: auto;
+      border-style: outset;
+      border-width: 3px;
+      border-radius: 7px;
+      border-color: #000000;
+      opacity: .45;
+    }
+
+    .footer-title {
+      flex-grow: 1;               // Allows the title to take up available space
+      text-align: center;         // Ensures the text stays centered in that space
+      margin: 0 20px;
+      padding-left: auto;
+      padding-right: auto;
+      // This creates your "margins" between images and text
+    }
+  }
+}

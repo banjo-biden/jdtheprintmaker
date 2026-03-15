@@ -1,0 +1,12 @@
+- name: Home
+  url: /
+- name: 'Updates and Events'
+  url: /updates.html
+- name: 'Contact || Booking'
+  url: /contact.html
+#- name: Videos
+#  url: /videos.html
+- name: Links
+  url: /links.html
+- name: About
+  url: /about.html
