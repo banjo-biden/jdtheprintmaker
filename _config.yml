@@ -22,8 +22,8 @@ title: JD The Printmaker
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   JD The Printmaker is a printmaker and artist based in Northeast Tennessee. This website serves as a portfolio of their work, and a hub for updates, events, and contact information.
-baseurl: "jdtheprintmaker.com" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "banjo-biden.github.io/jdtheprintmaker" # the subpath of your site, e.g. /blog
+url: "https://banjo-biden.github.io/jdtheprintmaker" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  banjo-biden
 
